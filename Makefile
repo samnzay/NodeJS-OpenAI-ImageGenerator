@@ -9,8 +9,6 @@ app-build: ## Build Docker image generator
 	docker build --tag ai-nodejs-image-gen:v1.0.0 .
 
 app-run: ## Run AI image generator appin Docker
-	docker stop ${AI-IMAGE-GEN-CONTAINER}
-	docker rm ${AI-IMAGE-GEN-CONTAINER}
 	docker run -p 5000:5000 --name ${AI-IMAGE-GEN-CONTAINER} ai-nodejs-image-gen:v1.0.0 
 
 app-stop: ## Stop IMAGE GENERATOR Container
