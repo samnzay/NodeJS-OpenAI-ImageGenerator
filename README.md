@@ -31,7 +31,7 @@ Stop and Remove The `Image Generator` Container
 ```bash
 make app-stop
 ```
-## if you choose to go Non Containized way
+## If You choose to go Non Containized way
 
 Install the dependencies
 
